@@ -1,0 +1,21 @@
+  <body>
+    <p id="notice">
+      <%= flash[:notice] %>
+    </p>
+      <table>
+        <%= render 'books/error_form', book: @book %>
+        <tr><td><strong>Title:</strong><%= @book.title %></td></tr>
+        <tr><td></td></tr>
+        <tr><td><strong>Body:</strong><%= @book.body %></td></tr>
+    　</table>
+          <tbody>
+            <tr>
+              <div class="text">
+                <%= link_to 'Edit', edit_book_path(@book),class: 'btn-primary mr-3' %>
+                 |
+                <a class="back" href="/books">Back</a>
+              </div>
+            </tr>
+          </tbody>
+    </table>
+  </body>
