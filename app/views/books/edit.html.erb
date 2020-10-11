@@ -1,5 +1,6 @@
 
 <h1>Editing Book</h1>
+    <%= render 'books/error_form', book: @book %>
     <%= form_with model: @book, local:true do |f| %>
     <div class="box">
       <label for="book_title">Title</label>
